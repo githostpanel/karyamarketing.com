@@ -1,1 +1,165 @@
-<h1>karyamarketing.com</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    /* Mengatur style dasar body */
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/smoke_texture2714-min.jpg') center center no-repeat;
+      background-size: cover;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    /* Container utama */
+    .container {
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Judul utama */
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: #fff;
+    }
+
+    /* Subtitle atau deskripsi */
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      color: #ddd;
+    }
+
+    /* Form input dan tombol */
+    .form-container {
+      margin: 20px 0;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      width: 250px;
+      max-width: 80%;
+    }
+
+    .notify-btn {
+      padding: 10px 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .notify-btn:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* Smoke effect container */
+    .smoke {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      overflow: hidden;
+    }
+
+    /* Individu smoke layer */
+    .smoke-layer {
+      position: absolute;
+      width: 250%;
+      height: 250%;
+      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/smoke-min.png') center center no-repeat;
+      background-size: cover;
+      opacity: 0.4;
+      animation: drift 15s infinite linear;
+    }
+
+    .smoke-layer:nth-child(2) {
+      opacity: 0.3;
+      animation-duration: 25s;
+      transform: scale(1.2);
+    }
+
+    .smoke-layer:nth-child(3) {
+      opacity: 0.5;
+      animation-duration: 20s;
+      transform: scale(1.5);
+    }
+
+    /* Efek animasi drift (asap yang bergerak) */
+    @keyframes drift {
+      0% {
+        transform: translate(-100px, -100px) scale(1) rotate(0deg);
+      }
+      50% {
+        transform: translate(100px, 200px) scale(1.1) rotate(5deg);
+      }
+      100% {
+        transform: translate(-50px, -150px) scale(1.05) rotate(-3deg);
+      }
+    }
+
+    /* Responsive style */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <p>We are working hard to launch our website. Stay tuned!</p>
+    
+    <!-- Form untuk notifikasi email -->
+    <div class="form-container">
+      <form action="#">
+        <input type="email" placeholder="Enter your email" required>
+        <button class="notify-btn">Notify Me</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Smoke background layers -->
+  <div class="smoke">
+    <div class="smoke-layer"></div>
+    <div class="smoke-layer"></div>
+    <div class="smoke-layer"></div>
+  </div>
+
+</body>
+</html>
