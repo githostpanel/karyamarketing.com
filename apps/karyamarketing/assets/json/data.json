@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Kalkulator Harga Mitra",
+        "link": "https://play.google.com/store/apps/details?id=com.karyamarketing.kalkulatormitra",
+        "image": "assets/images/1.png",
+        "price": "Free"
+    },
+    {
+        "title": "Wallpaper Christmas [Update]",
+        "link": "https://play.google.com/store/apps/details?id=com.karyamarketing.christmas",
+        "image": "assets/images/2.png",
+        "price": "Free"
+    },
+    {
+        "title": "Zed Craft - Ai Wallpaper 4k HD",
+          "link": "https://play.google.com/store/apps/details?id=com.karyamarketing.zedcraft",
+        "image": "assets/images/3.png",
+        "price": "Free"
+    },
+    {
+        "title": "Dompet Pintar - Catat Keuangan",
+          "link": "https://play.google.com/store/apps/details?id=com.karyamarketing.dompetpintar",
+        "image": "assets/images/4.png",
+        "price": "Free"
+    },
+    {
+        "title": "Pixel Art - Mewarnai Dengan Angka Pixel [Comming Soon]",
+          "link": "https://play.google.com/store/apps/details?id=com.karyamarketing.pixelart",
+        "image": "assets/images/5.png",
+        "price": "Free"
+    }
+]
